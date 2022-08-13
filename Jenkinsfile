@@ -41,8 +41,8 @@ stages {
          steps {
             echo 'DOCKER Start....................'
 
-              sh "docker build  -t myimage . "
-              sh "docker run -d -p 8085:1234 myimage"
+              sh "docker build  -t myimage2 . "
+              sh "docker run -d -p 8085:1234 myimage2"
               
             echo 'DOCKER Done.........................'
                }
@@ -53,7 +53,7 @@ stages {
             echo 'DOCKER LOGIN Start....................'
               sh "docker tag t2 shivakant/myimage2"
               sh "docker login -u shivakant -p Shiva@docker123"
-              sh "docker push shivakant/myimage2"
+              sh "docker push shivakant/myimage2:t2"
               
             echo 'DOCKER PUSH DONE.........................'
                }

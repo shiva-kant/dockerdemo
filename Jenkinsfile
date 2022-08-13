@@ -51,7 +51,7 @@ stages {
   stage('DOCKER LOGIN AND PUSH'){
          steps {
             echo 'DOCKER LOGIN Start....................'
-              sh "docker tag  shivakant/myimage2  shivakant/myimage2"
+              sh "docker tag  myimage2  myimage2"
               sh "docker login -u shivakant -p Shiva@docker123"
               sh "docker push myimage2"
               

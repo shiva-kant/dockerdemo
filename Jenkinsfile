@@ -42,7 +42,7 @@ stages {
             echo 'DOCKER Start....................'
 
               sh "docker build  -t myimage2 . "
-              sh "docker run -d -p 8085:12${env.BUILD_NUMBER} myimage2"
+              sh "docker run -d -p 80${env.BUILD_NUMBER}:1234 myimage2"
               
             echo 'DOCKER Done.........................'
                }

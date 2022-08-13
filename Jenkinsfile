@@ -32,8 +32,8 @@ stages {
         stage ('Copying file') {
             steps {
                echo '##################copy start############'
-                sh("cp -R /Users/shiva/.jenkins/workspace/test_plugin/HelloCICDIMAGE/target/*.jar /Users/shiva/.jenkins/workspace/test_plugin ")
-              sh("cp -R /Users/shiva/.jenkins/workspace/test_plugin/HelloCICDIMAGE/Dockerfile /Users/shiva/.jenkins/workspace/test_plugin ")
+                sh("cp -R /Users/shiva/.jenkins/workspace/dockerpipeline/HelloCICDIMAGE/target/*.jar /Users/shiva/.jenkins/workspace/dockerpipeline")
+              sh("cp -R /Users/shiva/.jenkins/workspace/dockerpipeline/HelloCICDIMAGE/Dockerfile /Users/shiva/.jenkins/workspace/dockerpipeline ")
               echo   'copy ###########FINIshed###############'
             }
         }

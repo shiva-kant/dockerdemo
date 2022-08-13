@@ -10,7 +10,7 @@ stages {
 
               echo 'Clonning Start'
 
-              git url: 'https://github.com/shiva-kant/dockertest.git'
+              git url: 'https://github.com/shiva-kant/dockerdemo.git'
 
               echo 'Clonning Done'
               }

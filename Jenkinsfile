@@ -52,7 +52,7 @@ stages {
          steps {
             echo 'DOCKER LOGIN Start....................'
               sh "docker tag myimage:1 shivakant/myimage2:thirdtag"
-              sh "docker login -u shivakant -p shiva@docker123"
+              sh "docker login -u shivakant -p Shiva@docker123"
               sh "docker push shivakant/myimage2"
               
             echo 'DOCKER PUSH DONE.........................'

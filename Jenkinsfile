@@ -52,7 +52,7 @@ stages {
          steps {
             echo 'ECR LOGIN Start....................'
 sh "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 563442890870.dkr.ecr.us-east-1.amazonaws.com/hello"
-sh "docker tag image_name 563442890870.dkr.ecr.us-east-1.amazonaws.com/hello:ecrtag"
+sh "docker tag myimage2 563442890870.dkr.ecr.us-east-1.amazonaws.com/hello:ecrtag"
 sh "docker push 563442890870.dkr.ecr.us-east-1.amazonaws.com/hello:ecrtag"
               
             echo 'ECR PUSH DONE.........................'

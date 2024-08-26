@@ -12,7 +12,7 @@ stages {
 
               git url: 'https://github.com/shiva-kant/dockerdemo.git'
 
-              echo 'Clonning Done'
+              echo 'Clonning Done                '
               }
           }
 
